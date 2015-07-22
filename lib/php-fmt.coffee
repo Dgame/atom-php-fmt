@@ -26,7 +26,7 @@ module.exports = PhpFmt =
             description: 'use spaces instead of tabs for indentation'
         level:
             type: 'string'
-            enum: ['none', 'psr', 'psr1', 'psr2', 'cakephp', 'laravel']
+            enum: ['none', 'psr', 'psr1', 'psr2', 'cakephp']
             default: 'psr2'
             description: 'for example: psr, psr1, psr2 or laravel'
         configFile:
@@ -110,7 +110,7 @@ module.exports = PhpFmt =
 
         atom.config.observe 'php-fmt.visibilityOrder', =>
           @visibilityOrder = atom.config.get 'php-fmt.visibilityOrder'
-        
+
         atom.config.observe 'php-fmt.useYoda', =>
           @useYoda = atom.config.get 'php-fmt.useYoda'
 
