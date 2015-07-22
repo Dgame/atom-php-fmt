@@ -20,6 +20,13 @@
         "phpfmt",
         "php",
         "formater",
+        "fixer",
+        "formatter",
+        "pretty printer",
+        "phpfmt",
+        "php.tools",
+        "psr1",
+        "psr2",
         "psr"
     ],
     "dependencies": {}
