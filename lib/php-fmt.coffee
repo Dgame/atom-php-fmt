@@ -142,7 +142,6 @@ module.exports = PhpFmt =
         # some debug output for a better support feedback
         console.debug('php-fmt Command', command)
         console.debug('php-fmt Arguments', args)
-        console.debug('php-fmt ', @useYoda, @autoAlign)
 
         stdout = (output) -> console.log(output)
         stderr = (output) -> console.error(output)
