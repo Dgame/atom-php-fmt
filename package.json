@@ -21,7 +21,14 @@
         "php",
         "fixer",
         "psr",
-        "php-cs"
+        "php-cs",
+        "formatter",
+        "pretty printer",
+        "phpfmt",
+        "php.tools",
+        "psr1",
+        "psr2",
+        "psr"
     ],
     "dependencies": {}
 }
