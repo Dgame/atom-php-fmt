@@ -33,7 +33,7 @@ module.exports = PhpFmt =
             type: 'string',
             default: '',
             description: 'you can store your configs in a file'
-        psrNaming:
+        PSRNaming:
             type: 'boolean',
             default: 'false',
             description: 'activate PSR1 style - Section 3 and 4.3 - Class and method names case.'
@@ -53,7 +53,7 @@ module.exports = PhpFmt =
             type: 'boolean',
             default: 'false',
             description: 'fixes visibiliy order for method in classes'
-        useYoda:
+        yodaStyle:
             type: 'boolean',
             default: 'false',
             description: 'yoda-style comparisons'
@@ -96,8 +96,8 @@ module.exports = PhpFmt =
         atom.config.observe 'php-fmt.configFile', =>
           @configFile = atom.config.get 'php-fmt.configFile'
 
-        atom.config.observe 'php-fmt.psrNaming', =>
-          @psrNaming = atom.config.get 'php-fmt.psrNaming'
+        atom.config.observe 'php-fmt.PSRNaming', =>
+          @PSRNaming = atom.config.get 'php-fmt.PSRNaming'
 
         atom.config.observe 'php-fmt.selfUpdate', =>
           @selfUpdate = atom.config.get 'php-fmt.selfUpdate'
@@ -111,8 +111,8 @@ module.exports = PhpFmt =
         atom.config.observe 'php-fmt.visibilityOrder', =>
           @visibilityOrder = atom.config.get 'php-fmt.visibilityOrder'
 
-        atom.config.observe 'php-fmt.useYoda', =>
-          @useYoda = atom.config.get 'php-fmt.useYoda'
+        atom.config.observe 'php-fmt.yodaStyle', =>
+          @yodaStyle = atom.config.get 'php-fmt.yodaStyle'
 
         atom.config.observe 'php-fmt.autoAlign', =>
           @autoAlign = atom.config.get 'php-fmt.autoAlign'
@@ -129,12 +129,12 @@ module.exports = PhpFmt =
         args.push '--' + @level if @level and @level != 'none'
         args.push '--indent_with_spaces=' + @spacesIndentation if @useSpaceIndentation
         args.push '--config=' + @configFile if @configFile.length != 0
-        args.push '--psr-naming' if @psrNaming
+        args.push '--psr-naming' if @PSRNaming
         args.push '--selfupdate' if @selfUpdate
         args.push '--lint-before' if @lintBefore
         args.push '--no-backup' if @noBackup
         args.push '--visibility_order' if @visibilityOrder
-        args.push '--yoda' if @useYoda == true
+        args.push '--yoda' if @yodaStyle
         args.push '--enable_auto_align' if @autoAlign
         args.push '--passes=' + @transformations if @transformations.length != 0
         args.push filePath
