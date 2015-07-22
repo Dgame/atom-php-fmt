@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Run php-fmt'
+      'command': 'php-fmt:transform'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'php-fmt'
+      'submenu': [
+        {
+          'label': 'Transform'
+          'command': 'php-fmt:transform'
+        }
+      ]
+    ]
+  }
+]
