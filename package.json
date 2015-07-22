@@ -1,7 +1,7 @@
 {
   "name": "php-fmt",
   "main": "./lib/php-fmt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Run the well known 'sublime-phpfmt' within Atom",
   "activationCommands": {
     "atom-workspace": "php-fmt:transform"
