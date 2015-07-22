@@ -127,7 +127,7 @@ module.exports = PhpFmt =
         args = []
         args.push @executablePath
         args.push '--' + @level if @level and @level != 'none'
-        args.push '--indent_with_spaces=' + @spacesIndentation if @useSpaceIndentation
+        args.push '--indent_with_space=' + @indentationSpaces if @useSpaceIndentation
         args.push '--config=' + @configFile if @configFile.length != 0
         args.push '--psr-naming' if @PSRNaming
         args.push '--selfupdate' if @selfUpdate
