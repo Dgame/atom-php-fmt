@@ -1,33 +1,33 @@
 {
-    "name": "php-fmt",
-    "main": "./lib/php-fmt",
-    "version": "0.0.0",
-    "description": "Run the well known 'sublime-phpfmt' within Atom",
-    "activationCommands": {
-        "atom-workspace": "php-fmt:transform"
-    },
-    "author": {
-        "name": "Randy Schütt, C. Cirello",
-        "url": "https://github.com/Dgame/atom-php-fmt"
-    },
-    "repository": "https://github.com/Dgame/atom-php-fmt",
-    "license": "MIT",
-    "engines": {
-        "atom": ">=0.50",
-        "php": ">=5.6"
-    },
-    "keywords": [
-        "phpfmt",
-        "php",
-        "formater",
-        "fixer",
-        "formatter",
-        "pretty printer",
-        "phpfmt",
-        "php.tools",
-        "psr1",
-        "psr2",
-        "psr"
-    ],
-    "dependencies": {}
+  "name": "php-fmt",
+  "main": "./lib/php-fmt",
+  "version": "0.1.0",
+  "description": "Run the well known 'sublime-phpfmt' within Atom",
+  "activationCommands": {
+    "atom-workspace": "php-fmt:transform"
+  },
+  "author": {
+    "name": "Randy Schütt, C. Cirello",
+    "url": "https://github.com/Dgame/atom-php-fmt"
+  },
+  "repository": "https://github.com/Dgame/atom-php-fmt",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.50",
+    "php": ">=5.6"
+  },
+  "keywords": [
+    "phpfmt",
+    "php",
+    "formater",
+    "fixer",
+    "formatter",
+    "pretty printer",
+    "phpfmt",
+    "php.tools",
+    "psr1",
+    "psr2",
+    "psr"
+  ],
+  "dependencies": {}
 }
