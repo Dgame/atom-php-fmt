@@ -5,7 +5,7 @@ php.fmt, php.tools and php.oracle aim to help PHP development.
 ### Installation
 
 #### Requirements
-- **You must have a running copy of PHP on the machine you are running Sublime Text**
+- **You must have a running copy of PHP on the machine you are running Atom**
 
 Plugin runs with PHP 5.6 or newer installed in the machine running the plugin.
 
