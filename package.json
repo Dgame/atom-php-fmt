@@ -17,11 +17,10 @@
         "php": ">=5.6"
     },
     "keywords": [
-        "phpcs",
+        "phpfmt",
         "php",
-        "fixer",
-        "psr",
-        "php-cs"
+        "formater",
+        "psr"
     ],
     "dependencies": {}
 }

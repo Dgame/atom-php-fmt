@@ -15,7 +15,7 @@ module.exports = PhpFmt =
         transformations:
             type: 'string'
             default: ''
-            description: 'a list of transformations. See <https://github.com/dericofilho/sublime-phpfmt#currently-supported-transformations> for a complete list'
+            description: 'a list of transformations, separated by comma. See <https://github.com/dericofilho/sublime-phpfmt#currently-supported-transformations> for a complete list'
 
 
     activate: (state) ->
@@ -37,11 +37,8 @@ module.exports = PhpFmt =
         atom.config.observe 'php-fmt.executablePath', =>
           @executablePath = atom.config.get 'php-fmt.executablePath'
 
-        atom.config.observe 'php-fmt.level', =>
-          @level = atom.config.get 'php-fmt.level'
-
-        atom.config.observe 'php-fmt.fixers', =>
-          @fixers = atom.config.get 'php-fmt.fixers'
+        atom.config.observe 'php-fmt.transformations', =>
+          @transformations = atom.config.get 'php-fmt.transformations'
 
         editor = atom.workspace.getActivePaneItem()
 
@@ -49,11 +46,11 @@ module.exports = PhpFmt =
 
         command = @phpExecutablePath
 
-        # init opptions
-        # args = [@executablePath, 'fix', filePath]
-
-        # add optional opptions
-        # args.push '--fixers=' + @fixers if @fixers
+        # options
+        args = []
+        args.push @executablePath
+        args.push '--passes=' + @transformations
+        args.push filePath
 
         # some debug output for a better support feedback
         console.debug('php-fmt Command', command)
