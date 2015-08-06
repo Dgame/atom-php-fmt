@@ -1,6 +1,6 @@
 # [php-fmt](https://github.com/dericofilho/php.tools) support for Atom
 
-php.fmt, php.tools and php.oracle aim to help PHP development.
+php.fmt aim to help PHP development.
 
 ### Installation
 
@@ -9,42 +9,6 @@ php.fmt, php.tools and php.oracle aim to help PHP development.
 - **You must have a copy of fmt.phar on the machine you are running Atom**
 
 Plugin runs with PHP 5.6 or newer installed in the machine running the plugin.
-
-There is a backwards compatible mode with PHP 5.5 - however not all improvements will be available in this mode.
-
-**The following features are available through command palette (`ctrl+shift+P` or `cmd+shift+P`) :**
-
- *  phpfmt: format now
- *  phpfmt: disable space around exclamation mark - Laravel Only
- *  phpfmt: indentation with spaces
- *  phpfmt: toggle additional transformations
- *  phpfmt: toggle excluded transformations
- *  phpfmt: toggle skip execution when .php.tools.ini is missing
- *  phpfmt: toggle auto align
- *  phpfmt: toggle autocomplete
- *  phpfmt: toggle CakePHP style (experimental)
- *  phpfmt: toggle dependency autoimport
- *  phpfmt: toggle format on save
- *  phpfmt: toggle Laravel style (deprecated)
- *  phpfmt: toggle php.vet
- *  phpfmt: toggle PSR1 - Class and Methods names
- *  phpfmt: toggle PSR1
- *  phpfmt: toggle PSR2
- *  phpfmt: toggle smart linebreak after open curly
- *  phpfmt: toggle visibility order
- *  phpfmt: toggle yoda mode
- *  phpfmt: analyse this
- *  phpfmt: build autocomplete database
- *  phpfmt: getter and setter (camelCase)
- *  phpfmt: getter and setter (Go)
- *  phpfmt: getter and setter (snake_case)
- *  phpfmt: generate PHPDoc block
- *  phpfmt: look for .php.tools.ini
- *  phpfmt: order method within classes
- *  phpfmt: refactor
- *  phpfmt: toggle PHP 5.5 compatibility mode
- *  phpfmt: troubleshoot information
-
 
 ### Currently Supported Transformations:
 
@@ -260,7 +224,7 @@ $d = new D();
 
 ### Troubleshooting
 - Be sure you can run PHP from the command line.
-- If you are a MAMP user, please use the MAMP's PHP binary to execute the plugin. This issue might be handy to help you configure the plugin: https://github.com/dericofilho/sublime-phpfmt/issues/109
+- If you are a MAMP user, please use the MAMP's PHP binary to execute the plugin. This issue might be handy to help you configure the plugin: https://github.com/phpfmt/sublime-phpfmt/issues/109
 
 ### Acknowledgements
 - GoSublime - for the method to update the formatted buffer
