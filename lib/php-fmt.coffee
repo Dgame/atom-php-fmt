@@ -129,7 +129,7 @@ module.exports = PhpFmt =
         args.push '--' + @level if @level and @level != 'none'
         args.push '--indent_with_space=' + @indentationSpaces if @useSpaceIndentation
         args.push '--config=' + @configFile if @configFile.length != 0
-        args.push '--psr-naming' if @PSRNaming
+        args.push '--psr1-naming' if @PSRNaming
         args.push '--selfupdate' if @selfUpdate
         args.push '--lint-before' if @lintBefore
         args.push '--no-backup' if @noBackup
