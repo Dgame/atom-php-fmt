@@ -29,5 +29,7 @@
     "psr2",
     "psr"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "hasDeprecations": true,
+  "latestHasDeprecations": true
 }
